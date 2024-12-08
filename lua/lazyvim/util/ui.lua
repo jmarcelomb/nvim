@@ -76,4 +76,3 @@ function M.maximize()
 end
 
 return M
-

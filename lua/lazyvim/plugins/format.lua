@@ -100,4 +100,3 @@ return {
     config = M.setup,
   },
 }
-

@@ -1,7 +1,6 @@
 -- file explorer
-return 
-  {
-    
+return {
+
   -- ui components
   { "MunifTanjim/nui.nvim", lazy = true },
   {
@@ -127,5 +126,5 @@ return
         end,
       })
     end,
-  }
-  }
+  },
+}

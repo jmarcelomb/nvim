@@ -97,4 +97,3 @@ function M.on_attach(_, buffer)
 end
 
 return M
-

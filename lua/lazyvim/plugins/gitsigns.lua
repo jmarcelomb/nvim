@@ -1,8 +1,8 @@
-  -- git signs highlights text that has changed since the list
-  -- git commit, and also lets you interactively stage & unstage
-  -- hunks in a commit.
+-- git signs highlights text that has changed since the list
+-- git commit, and also lets you interactively stage & unstage
+-- hunks in a commit.
 return {
-    {
+  {
     "lewis6991/gitsigns.nvim",
     event = "LazyFile",
     opts = {
@@ -73,4 +73,4 @@ return {
       }):map("<leader>uG")
     end,
   },
-  }
+}

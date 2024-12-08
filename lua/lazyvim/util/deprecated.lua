@@ -57,4 +57,3 @@ function M.toggle()
 end
 
 return M
-

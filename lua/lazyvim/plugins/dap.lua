@@ -128,7 +128,7 @@ return {
     -- mason-nvim-dap is loaded when nvim-dap loads
     config = function() end,
   },
-{
+  {
     "mfussenegger/nvim-dap-python",
     config = function()
       local dap_python = require("dap-python")
@@ -146,4 +146,3 @@ return {
     },
   },
 }
-

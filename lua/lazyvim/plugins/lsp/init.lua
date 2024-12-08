@@ -101,27 +101,27 @@ return {
             },
           },
           pyright = {
-          settings = {
-            pyright = {
-              -- Using Ruff's import organizer
-              disableOrganizeImports = true,
-            },
-            python = {
-              analysis = {
-                -- Ignore all files for analysis to exclusively use Ruff for linting
-                ignore = { "*" },
+            settings = {
+              pyright = {
+                -- Using Ruff's import organizer
+                disableOrganizeImports = true,
+              },
+              python = {
+                analysis = {
+                  -- Ignore all files for analysis to exclusively use Ruff for linting
+                  ignore = { "*" },
+                },
               },
             },
           },
-        },
-        ruff = {
-          trace = "messages",
-          init_options = {
-            settings = {
-              logLevel = "debug",
+          ruff = {
+            trace = "messages",
+            init_options = {
+              settings = {
+                logLevel = "debug",
+              },
             },
           },
-        },
         },
         -- you can do any additional lsp server setup here
         -- return true if you don't want this server to be setup with lspconfig
@@ -319,4 +319,3 @@ return {
     end,
   },
 }
-

@@ -129,4 +129,3 @@ vim.opt.listchars = {
   trail = "·",
   nbsp = "+",
 }
-

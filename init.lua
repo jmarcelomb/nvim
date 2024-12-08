@@ -1,2 +1,1 @@
 require("lazyvim.lazy")
-

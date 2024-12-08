@@ -22,4 +22,3 @@ _G.LazyVim = require("lazyvim.util")
 --- @param opts vim.api.keyset.create_autocmd.opts
 --- @return integer
 function vim.api.nvim_create_autocmd(event, opts) end
-

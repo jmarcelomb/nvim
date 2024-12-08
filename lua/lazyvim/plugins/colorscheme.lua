@@ -1,5 +1,5 @@
 return {
- {
+  {
     "navarasu/onedark.nvim",
     name = "onedark",
     config = function()
@@ -8,7 +8,7 @@ return {
         style = "darker",
       })
     end,
-  } ,
+  },
 
   -- tokyonight
   {
@@ -75,5 +75,3 @@ return {
     },
   },
 }
-
-

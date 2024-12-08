@@ -194,4 +194,3 @@ function M.snacks_toggle(buf)
 end
 
 return M
-
