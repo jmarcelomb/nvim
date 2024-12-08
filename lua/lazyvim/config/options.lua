@@ -114,3 +114,19 @@ end
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 
+vim.g.lazyvim_python_ruff = "ruff"
+
+-- remove transparency
+vim.opt.pumblend = 0 -- for cmp menu
+vim.opt.winblend = 0 -- for documentation popup
+
+-- enable spell check
+-- vim.opt.spelllang = "en_us"
+-- vim.opt.spell = true
+
+vim.opt.listchars = {
+  tab = "> ",
+  trail = "·",
+  nbsp = "+",
+}
+
