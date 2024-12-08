@@ -7,7 +7,7 @@
   "conform.nvim": { "branch": "master", "commit": "02fd64fb3d4b18ec029c0e0683c3dc3ec6d2c5b8" },
   "flit.nvim": { "branch": "main", "commit": "1ef72de6a02458d31b10039372c8a15ab8989e0d" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
-  "fzf-lua": { "branch": "main", "commit": "fca198e2abd2db6600b25443bc70ee7f342aa217" },
+  "fzf-lua": { "branch": "main", "commit": "b0b6ca4b3607db4cbc74e7e8199cd628cb6fbeee" },
   "gitsigns.nvim": { "branch": "main", "commit": "5f808b5e4fef30bd8aca1b803b4e555da07fc412" },
   "grug-far.nvim": { "branch": "main", "commit": "3707c4fb6ac982a1ca013c1b3bffa8e396f775cc" },
   "harpoon": { "branch": "harpoon2", "commit": "a84ab829eaf3678b586609888ef52f7779102263" },

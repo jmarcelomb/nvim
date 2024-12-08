@@ -2,7 +2,6 @@ _G.LazyVim = require("lazyvim.util")
 
 ---@class LazyVimConfig: LazyVimOptions
 local M = {}
-
 M.version = "13.7.0" -- x-release-please-version
 LazyVim.config = M
 
@@ -11,7 +10,7 @@ local defaults = {
   -- colorscheme can be a string like `catppuccin` or a function that will load the colorscheme
   ---@type string|fun()
   colorscheme = function()
-    require("tokyonight").load()
+    require("onedark").load()
   end,
   -- load the default settings
   defaults = {
@@ -188,7 +187,7 @@ function M.setup(opts)
       end
 
       LazyVim.format.setup()
-      LazyVim.news.setup()
+      -- LazyVim.news.setup()
       LazyVim.root.setup()
 
       vim.api.nvim_create_user_command("LazyExtras", function()
@@ -313,4 +312,3 @@ setmetatable(M, {
 })
 
 return M
-

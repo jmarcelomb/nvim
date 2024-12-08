@@ -28,7 +28,5 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require("onedark").load()
--- require("catppuccin").load()
--- require("tokyonight").load()
-require("lazyvim")
+local M = {}
+require("lazyvim").setup(M)

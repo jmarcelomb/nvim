@@ -109,6 +109,5 @@ return {
         table.insert(opts.sources, { name = "snippets" })
       end
     end,
-  }
+  },
 }
-
