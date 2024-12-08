@@ -8,6 +8,12 @@ This is my personal Neovim configuration, based on [LazyVim](https://github.com/
 - **Custom Plugin Additions**: Handpicked plugins added to suit my personal preferences.
 - **Efficient and Clean**: Designed to enhance productivity with minimal clutter.
 
+## Requirements
+
+- cc compiler for treesitter
+- fzf
+- cargo install typos-cli
+
 ## Installation
 
 To use this configuration:
