@@ -196,3 +196,6 @@ if vim.fn.has("nvim-0.11") == 0 then
   end, { expr = true, desc = "Jump Previous" })
 end
 
+-- -- Repeat last macro
+map("", ",", "@@", { desc = "Run last macro" })
+
