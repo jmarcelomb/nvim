@@ -129,3 +129,6 @@ vim.opt.listchars = {
   trail = "·",
   nbsp = "+",
 }
+
+vim.opt.colorcolumn = "80"
+vim.opt.scrolloff = 8
