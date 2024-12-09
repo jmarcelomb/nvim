@@ -198,3 +198,8 @@ end
 
 -- -- Repeat last macro
 map("", ",", "@@", { desc = "Run last macro" })
+
+-- Code navigation
+map("n", "<space>gD", "<c-w>v<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Open definition in buffer" })
+map("n", "<space>gF", "<c-w>vgF", { desc = "Open file in buffer" })
+
