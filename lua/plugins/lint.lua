@@ -7,7 +7,7 @@ return {
     linters_by_ft = {
       fish = { "fish" },
       python = { "mypy", "pylint", "ruff" },
-      ["*"] = { "typos" },
+      -- ["*"] = { "typos" },
     },
     -- LazyVim extension to easily override linter options
     -- or add custom linters.

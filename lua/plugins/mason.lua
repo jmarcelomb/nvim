@@ -9,6 +9,8 @@ return {
       "mypy",
       "pylint",
       "debugpy",
+
+      "typos-lsp",
     })
   end,
 }

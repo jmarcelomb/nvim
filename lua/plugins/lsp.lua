@@ -7,6 +7,7 @@ return {
       -- pyright will be automatically installed with mason and loaded with lspconfig
       pyright = {
         settings = {
+          typos_lsp = {},
           pyright = {
             -- Using Ruff's import organizer
             disableOrganizeImports = true,
