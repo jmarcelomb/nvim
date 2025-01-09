@@ -21,8 +21,6 @@ vim.opt.listchars = {
 vim.opt.colorcolumn = "80"
 vim.opt.scrolloff = 10
 
-vim.b.autoformat = false
-
 vim.o.clipboard = "unnamedplus"
 
 -- Disable neovide animations

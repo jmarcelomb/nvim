@@ -16,3 +16,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     copy_to_unnamed(vim.v.event.regcontents)
   end,
 })
+
+-- Disable autoformat for lua files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "c", "py" },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
