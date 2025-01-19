@@ -10,6 +10,11 @@ return {
       "pylint",
       "debugpy",
 
+      -- Rust
+      "rust-analyzer",
+      "bacon-ls",
+
+      -- General
       "typos-lsp",
     })
   end,
