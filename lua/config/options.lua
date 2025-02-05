@@ -34,3 +34,6 @@ vim.g.neovide_scroll_animation_length = 0.00
 
 -- Disable animations
 vim.g.snacks_animate = false
+
+-- Change diff algorithm
+vim.opt.diffopt = "internal,filler,closeoff,indent-heuristic,linematch:60,algorithm:histogram"
