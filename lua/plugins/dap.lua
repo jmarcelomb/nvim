@@ -25,9 +25,9 @@ return {
     { "<leader>de", function() require("dapui").eval(nill, { enter = true }) end, desc = "Eval", mode = {"n", "v"} },
     },
   },
-  {
-    "daic0r/dap-helper.nvim",
-    event = "VeryLazy",
-    opts = {},
-  },
+  -- {
+  --   "daic0r/dap-helper.nvim",
+  --   event = "VeryLazy",
+  --   opts = {},
+  -- },
 }
