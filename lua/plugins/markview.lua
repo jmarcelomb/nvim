@@ -1,10 +1,16 @@
 return {
   "OXY2DEV/markview.nvim",
-  event = "VeryLazy",
-  ft = "markdown",
-
-  dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-    "nvim-tree/nvim-web-devicons",
+  lazy = false,
+  config = function()
+    require("markview").setup({
+      auto_start = false, -- Disable automatic preview
+    })
+  end,
+  keys = {
+    {
+      "<leader>mp",
+      ":Markview<CR>",
+      desc = "Toggle markdown preview",
+    },
   },
 }
