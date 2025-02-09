@@ -1,17 +1,18 @@
 return {
   {
     "maan2003/lsp_lines.nvim",
-    event = "VeryLazy", -- Or `LspAttach`
-    priority = 1000, -- needs to be loaded in first
     config = function()
+      -- Disable virtual text explicitly before setting up lsp_lines
+      vim.diagnostic.config({ virtual_text = false })
       require("lsp_lines").setup()
-      vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
     end,
     keys = {
       {
         "<leader>lt",
         function()
-          require("lsp_lines").toggle()
+          local lsp_lines = require("lsp_lines")
+          local state = lsp_lines.toggle()
+          vim.diagnostic.config({ virtual_text = not state }) -- Toggle virtual text when disabling lsp_lines
         end,
         desc = "Toggle lsp_lines",
       },
