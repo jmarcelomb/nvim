@@ -1,5 +1,23 @@
 return {
   {
+    "maan2003/lsp_lines.nvim",
+    event = "VeryLazy", -- Or `LspAttach`
+    priority = 1000, -- needs to be loaded in first
+    config = function()
+      require("lsp_lines").setup()
+      vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
+    end,
+    keys = {
+      {
+        "<leader>lt",
+        function()
+          require("lsp_lines").toggle()
+        end,
+        desc = "Toggle lsp_lines",
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
