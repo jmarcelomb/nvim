@@ -48,7 +48,7 @@ return {
     priority = 1000, -- needs to be loaded in first
     config = function()
       -- Disable virtual text explicitly before setting up lsp_lines
-      vim.diagnostic.config({ virtual_text = false })
+      vim.diagnostic.config({ virtual_lines = false })
       require("lsp_lines").setup()
     end,
     keys = {
