@@ -1,24 +1,5 @@
 return {
   {
-    "maan2003/lsp_lines.nvim",
-    config = function()
-      -- Disable virtual text explicitly before setting up lsp_lines
-      vim.diagnostic.config({ virtual_text = false })
-      require("lsp_lines").setup()
-    end,
-    keys = {
-      {
-        "<leader>lt",
-        function()
-          local lsp_lines = require("lsp_lines")
-          local state = lsp_lines.toggle()
-          vim.diagnostic.config({ virtual_text = not state }) -- Toggle virtual text when disabling lsp_lines
-        end,
-        desc = "Toggle lsp_lines",
-      },
-    },
-  },
-  {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
@@ -58,6 +39,27 @@ return {
         clangd = {
           mason = false,
         },
+      },
+    },
+  },
+  {
+    "maan2003/lsp_lines.nvim",
+    event = "VeryLazy", -- Or `LspAttach`
+    priority = 1000, -- needs to be loaded in first
+    config = function()
+      -- Disable virtual text explicitly before setting up lsp_lines
+      vim.diagnostic.config({ virtual_text = false })
+      require("lsp_lines").setup()
+    end,
+    keys = {
+      {
+        "<leader>lt",
+        function()
+          local lsp_lines = require("lsp_lines")
+          local state = lsp_lines.toggle()
+          vim.diagnostic.config({ virtual_text = not state }) -- Toggle virtual text when disabling lsp_lines
+        end,
+        desc = "Toggle lsp_lines",
       },
     },
   },
