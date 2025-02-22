@@ -1,0 +1,24 @@
+return {}
+-- return {
+--   "cordx56/rustowl",
+--   event = "VeryLazy",
+--   ft = { "rust" },
+--   dependencies = { "neovim/nvim-lspconfig" },
+--   config = function()
+--     local lspconfig = require("lspconfig")
+--     lspconfig.rustowl.setup({
+--       trigger = {
+--         hover = false,
+--       },
+--     })
+--   end,
+--   keys = {
+--     {
+--       "<leader>co",
+--       require("lspconfig").rustowl.rustowl_cursor,
+--       desc = "Activate RustOwl",
+--       noremap = true,
+--       silent = true,
+--     },
+--   },
+-- }
