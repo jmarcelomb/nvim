@@ -19,10 +19,10 @@ repos:
       - id: codespell
         args: ["--ignore-words", ".codespellignore" ]
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.0
+    rev: v8.26.0
     hooks:
       - id: gitleaks
   - repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v2.0.2
+    rev: v2.1.0
     hooks:
       - id: stylua # or stylua-system / stylua-github
