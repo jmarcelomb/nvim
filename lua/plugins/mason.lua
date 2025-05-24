@@ -12,7 +12,7 @@ return {
 
       -- Rust
       "rust-analyzer",
-      "bacon-ls",
+      -- "bacon-ls",
 
       -- General
       "typos-lsp",
