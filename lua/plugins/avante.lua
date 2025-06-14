@@ -262,7 +262,8 @@ return {
     --     model = "qwq:32b",
     --   },
     -- },
-    opts = { provider = "gemini" },
+    -- opts = { provider = "gemini" },
+    opts = { provider = "copilot" },
     disabled_tools = { "web_search" },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
