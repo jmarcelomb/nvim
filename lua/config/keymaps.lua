@@ -6,3 +6,5 @@ local map = LazyVim.safe_keymap_set
 
 -- -- Repeat last macro
 map("", ",", "@@", { desc = "Run last macro" })
+
+map("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
