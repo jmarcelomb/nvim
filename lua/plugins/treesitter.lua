@@ -24,6 +24,7 @@ return {
         "yaml",
         "toml",
         "xml",
+        "tmux",
       })
     end,
   },
