@@ -3,11 +3,11 @@ return {
   opts = {
     -- add any options here
     cli = {
-      -- mux = {
-      --   backend = "tmux",
-      --   enabled = true,
-      -- },
-      -- win = { layout = "float" },
+      mux = {
+        backend = "tmux",
+        enabled = true,
+      },
+      win = { layout = "float" },
     },
   },
   keys = {
