@@ -30,10 +30,10 @@ repos:
       - id: codespell
         args: ["--ignore-words", ".codespellignore"]
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.28.0
+    rev: v8.30.0
     hooks:
       - id: gitleaks
   - repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v2.3.0
+    rev: v2.3.1
     hooks:
       - id: stylua # or stylua-system / stylua-github
