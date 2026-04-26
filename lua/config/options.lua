@@ -6,6 +6,8 @@ local g = vim.g
 local o = vim.opt
 
 g.lazyvim_python_ruff = "ruff"
+g.ai_cmp = false
+
 
 -- auto format on save
 -- vim.g.autoformat = false

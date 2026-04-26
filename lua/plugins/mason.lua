@@ -5,7 +5,7 @@ return {
     vim.list_extend(opts.ensure_installed, {
       -- Python
       "ruff",
-      "pyright",
+      "ty",
       "mypy",
       "pylint",
       "debugpy",
