@@ -1,7 +1,7 @@
 return {
   {
-    {
-      "mfussenegger/nvim-dap",
+  {
+    "mfussenegger/nvim-dap",
     -- stylua: ignore
     keys = {
       { "<leader>d", "", desc = "+debug", mode = {"n", "v"} },
@@ -23,40 +23,21 @@ return {
     { "<leader>ds", function() require("dap").session() end, desc = "Session" },
     { "<leader>dt", function() require("dap").terminate() end, desc = "Terminate" },
     { "<leader>dw", function() require("dap.ui.widgets").hover() end, desc = "Widgets" },
-    { "<leader>de", function() require("dapui").eval(nill, { enter = true }) end, desc = "Eval", mode = {"n", "v"} },
     },
     },
   },
+
   {
-    "daic0r/dap-helper.nvim",
-    dependencies = { "rcarriga/nvim-dap-ui", "mfussenegger/nvim-dap" },
-    config = function()
-      require("dap-helper").setup()
-    end,
-  },
-  {
-    "rcarriga/nvim-dap-ui",
+    "igorlfs/nvim-dap-view",
+    version = "1.*",
     dependencies = { "nvim-neotest/nvim-nio" },
-  -- stylua: ignore
-  keys = {
-    { "<leader>du", function() require("dapui").toggle({ }) end, desc = "Dap UI" },
-    { "<leader>de", function() require("dapui").eval() end, desc = "Eval", mode = {"n", "v"} },
-  },
-    opts = {},
+    ---@module "dap-view"
+    ---@type dapview.Config
+    opts = {
+      auto_toggle = true,
+    },
     config = function(_, opts)
-      local dap = require("dap")
-      local dapui = require("dapui")
-      dapui.setup(opts)
-      dap.listeners.after.event_initialized["dapui_config"] = function()
-        dapui.open({})
-      end
-      dap.listeners.before.event_terminated["dapui_config"] = function()
-        -- dapui.close({})
-      end
-      dap.listeners.before.event_exited["dapui_config"] = function()
-        -- dapui.close({})
-      end
+      require("dap-view").setup(opts)
     end,
   },
-  -- { "mfussenegger/nvim-dap-python", enabled = false },
 }
