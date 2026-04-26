@@ -1,6 +1,5 @@
 return {
   {
-  {
     "mfussenegger/nvim-dap",
     -- stylua: ignore
     keys = {
@@ -22,8 +21,8 @@ return {
     { "<leader>dR", function() require("dap").repl.toggle() end, desc = "Toggle REPL" },
     { "<leader>ds", function() require("dap").session() end, desc = "Session" },
     { "<leader>dt", function() require("dap").terminate() end, desc = "Terminate" },
+    { "<leader>de", function() require("dap.ui.widgets").hover() end, desc = "Evaluate" },
     { "<leader>dw", function() require("dap.ui.widgets").hover() end, desc = "Widgets" },
-    },
     },
   },
 
